@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box; 
+ }
+ 
+ header {
+     display: inline;
+ }
+ 
+ .item-img {
+     width: 100%;
+     max-height: 300px;
+     object-fit: cover;
+     object-position: center;
+ }
+ 
+ body{
+     font-family: "Quicksand", sans-serif;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ main {
+     padding: 20px;
+     overflow: auto;
+    
+ }
+ 
+ 
+ h3{
+    color: rgb(0, 0, 209); 
+ }
+ 
+ footer {
+     padding: 10px;
+     color: white;
+     background-color: rgb(0, 144, 163);
+     text-align: center;
+     font-size: small;
+ 
+ }
+ 
+ 
+ nav a {
+     font-size: 18px;
+     font-weight: 400;
+     text-decoration: none;
+     padding: 5px;
+     color: white;
+     
+ }
+ 
+ 
+ 
+ nav a:hover {
+     font-weight: bold;   
+ }
+ 
+ nav li {
+     display: inline;
+     list-style-type: none;
+     margin-right: 20px;
+ }
+ 
+ nav {
+     padding: 5px;
+     background-color: rgb(0, 123, 145);
+     position: sticky;
+     top: 0;
+ }
+ 
+ .Geografis-image {
+     width: 100%;
+     max-height: 300px;
+     object-fit: cover;
+     object-position: center;
+   }
+ 
+   .card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+     padding: 20px;
+     margin-top: 20px;
+   }
+ 
+   .jumbotron {
+     font-size: 20px;
+     padding: 20px;
+     background-color: rgb(0, 144, 163);
+     text-align: center;
+     color: white;  
+   }
+ 
+   #content {
+     float: left;
+     width: 75%;
+ 
+   }
+ 
+   aside {
+     float: right;
+     width: 25%;
+     padding-left: 20px;
+    
+   }
+
+   aside h3 {
+    text-align: center;
+   }
+   
+   
+   @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+  
+  
+  /* UNTUK MENGATUR YANG MEMILKI LAYAR 1000PX */
+  @media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+  /* UNTUK MEDIA DENGAN UKURAN MAX 768PX SEPERTI HP */
+  @media screen and (max-width: 768px) {
+    nav ul{
+      justify-content: center;
+    }
+
+    main aside {
+      align-self: stretch;
+    }
+  }
+   
+ 
+ 
+   
+ 
+ 
